@@ -7,12 +7,21 @@ def get_todos() -> list[Todo]:
 
 
 def create_todo(todo_item: Todo):
-    return "Todo created"
+    return {
+        "status": "request received",
+        "data received": todo_item
+    }
 
 
-def modify_todo(todo_id: int, updated_todo: Todo):
-    return "Todo modified"
+def modify_todo(updated_todo: Todo):
+    return {
+        "status": "request received",
+        "updated todo": updated_todo
+    }
 
 
-def delete_todo(todo_id: int):
-    return "Todo deleted"
+def delete_todo(todo_id: str):
+    return {
+        "status": "request received",
+        "todo id received": todo_id
+    }
