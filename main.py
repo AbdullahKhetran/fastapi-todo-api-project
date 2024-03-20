@@ -18,13 +18,13 @@ def create_todo(todo: Todo):
 
 
 @app.patch("/")
-def modify_todo(todo_id: int, updated_todo: Todo):
-    return service.modify_todo(todo_id, updated_todo)
+def modify_todo(updated_todo: Todo):
+    return service.modify_todo(updated_todo)
 
 
-@app.delete("/")
-def delete_todo(todo_id: int):
-    return service.delete_todo(todo_id)
+@app.delete("/delete/{id}")
+def delete_todo(id: str):
+    return service.delete_todo(id)
 
 
-# run `uvicorn main:app`
+# run `uvicorn main:app --relaod`
