@@ -11,9 +11,9 @@ def create_todo(todo_item: Todo):
     return data.create_todo(todo_item)
 
 
-def modify_todo(todo_id: int, updated_todo: Todo):
-    return data.modify_todo()
+def modify_todo(updated_todo: Todo):
+    return data.modify_todo(updated_todo)
 
 
-def delete_todo(todo_id):
+def delete_todo(todo_id: str):
     return data.delete_todo(todo_id)
