@@ -1,0 +1,1 @@
+This is a FastAPI Todo app according to the requirements defined in this [project](https://github.com/panaverse/learn-generative-ai/blob/main/04_everything_is_an_api/08_fastapi_todo/01_todo_api_project/readme.md)
