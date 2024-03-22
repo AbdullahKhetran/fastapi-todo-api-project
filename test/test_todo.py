@@ -4,27 +4,10 @@ from fake import todo as data
 
 # get todos
 sample_todos = [
-    {
-        "id": "1",
-        "title": "lorem",
-        "description": "lorem to do"
-    },
-    {
-        "id": "2",
-        "title": "ipsum",
-        "description": "ipsum to do"
-    },
-    {
-        "id": "3",
-        "title": "dolor",
-        "description": "dolor to do"
-    },
-    {
-        "id": "4",
-        "title": "sit",
-        "description": "sit to do"
-    },
-
+    Todo(id=1, title="lorem", description="lorem to do"),
+    Todo(id=2, title="ipusm", description="ipsum to do"),
+    Todo(id=3, title="dolor", description="dolor to do"),
+    Todo(id=4, title="sit", description="sit to do")
 ]
 
 
