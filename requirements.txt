@@ -3,3 +3,5 @@ fastapi
 httpie
 pydantic
 pytest
+sqlalchemy
+python-dotenv
